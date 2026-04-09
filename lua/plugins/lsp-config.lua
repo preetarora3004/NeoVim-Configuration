@@ -8,7 +8,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls" }
+        ensure_installed = { "lua_ls", "eslint"}
       })
     end,
   },
@@ -23,6 +23,8 @@ return {
       vim.lsp.enable("prismals")
       vim.lsp.config("jsonls", {})
       vim.lsp.enable("jsonls")
+      vim.lsp.config("eslint",{})
+      vim.lsp.enable("eslint")
 
       vim.lsp.config("bashls", {})
       vim.lsp.enable("bashls")

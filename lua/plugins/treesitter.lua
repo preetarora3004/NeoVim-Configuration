@@ -6,7 +6,7 @@
     lazy = false,
 
     config = function()
-      require("nvim-treesitter.config").setup({
+      require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "lua",
           "javascript",
@@ -16,8 +16,8 @@
           "bash",
           "html",
           "css",
+          "prisma"
         },
-
         highlight = { enable = true },
         indent = { enable = true },
       })
