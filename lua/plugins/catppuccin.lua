@@ -1,8 +1,8 @@
 return {
-	"lewpoly/sherbet.nvim",
-   name = "lewpoly",
+	"folke/tokyonight.nvim",
+   name = "tokyonight",
    config = function()
 		vim.opt.termguicolors = true
-		vim.cmd("colorscheme sherbet")
+		vim.cmd("colorscheme tokyonight-moon")
 	end,
 }
